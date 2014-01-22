@@ -1,0 +1,20 @@
+{
+    "np-audioplayer": {
+        "requires": [
+            "view"
+        ]
+    },
+    "np-login": {
+        "requires": [
+            "np-models",
+            "view"
+        ]
+    },
+    "np-models": {
+        "requires": [
+            "model",
+            "io-base",
+            "json-stringify"
+        ]
+    }
+}

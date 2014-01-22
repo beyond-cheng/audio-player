@@ -1,0 +1,10 @@
+{{setCSS "login"}}
+<div id="login" class="login"></div>
+<script>
+	YUI().use('np-login', function (Y) {
+		new Y.LoginView({
+			container: '#login',
+			model: new Y.User()
+		}).render();
+	});
+</script>

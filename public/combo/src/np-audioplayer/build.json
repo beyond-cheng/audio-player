@@ -1,0 +1,8 @@
+{
+	"name": "np-audioplayer",
+	"builds": {
+		"np-audioplayer": {
+			"jsfiles": ["views.js"]
+		}
+	}
+}

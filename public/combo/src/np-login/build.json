@@ -1,0 +1,8 @@
+{
+	"name": "np-login",
+	"builds": {
+		"np-login": {
+			"jsfiles": ["view.js"]
+		}
+	}
+}

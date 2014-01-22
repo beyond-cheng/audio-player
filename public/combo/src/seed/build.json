@@ -1,0 +1,24 @@
+{
+    "name": "seed",
+    "shifter": {
+        "jsstamp": false,
+        "coverage": false
+    },
+    "exec": [
+        "./scripts/meta_join.js",
+        "./scripts/copy_yui.js"
+    ],
+    "builds": {
+        "seed": {
+            "exec": [
+                "./scripts/build.js"
+            ],
+            "prependfiles": [
+                "./js/yui.js"
+            ],
+            "jsfiles": [
+                "config.js"
+            ]
+        }
+    }
+}

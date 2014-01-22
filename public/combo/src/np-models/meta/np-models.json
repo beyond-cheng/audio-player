@@ -1,0 +1,5 @@
+{
+	"np-models": {
+		"requires": ["model", "io-base", "json-stringify"]
+	}
+}

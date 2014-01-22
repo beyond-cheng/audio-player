@@ -1,0 +1,11 @@
+{{setCSS "andioplayer"}}
+<h1>Welcome {{{user}}}!</h1>
+<div>hello world</div>
+<div id="audioplayer"></div>
+<script type="text/javascript">
+	YUI().use('np-audioplayer', function (Y) {
+		new Y.AudioPlayer({
+			container: '#audioplayer'
+		}).render();
+	});
+</script>

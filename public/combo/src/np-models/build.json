@@ -1,0 +1,8 @@
+{
+	"name": "np-models",
+	"builds": {
+		"np-models": {
+			"jsfiles": ["sync.js", "models.js"]
+		}
+	}
+}

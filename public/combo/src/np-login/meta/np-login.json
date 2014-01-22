@@ -1,0 +1,5 @@
+{
+	"np-login": {
+		"requires": ["np-models", "view"]
+	}
+}

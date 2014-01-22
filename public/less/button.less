@@ -1,0 +1,118 @@
+.button {
+	@color-white: #fff;
+	@color-black: #000;
+
+	.structure () {
+		&:extend(.inline-block);
+		&:extend(.unselectable);
+		*overflow: visible;
+		margin: 0;
+		line-height: 1.5;
+		white-space: nowrap;
+		text-align: center;
+		vertical-align: middle;
+		cursor: pointer;
+	
+		border-radius: 6px;
+		border-width: 1px;
+		border-style: solid;
+
+		&:hover,
+		&-hover {
+			text-decoration: none;
+		}
+	
+		&-disabled,
+		&-disabled:hover {
+			cursor: not-allowed;
+		}
+	
+		/* Firefox: Get rid of the inner focus border */
+		&::-moz-focus-inner{
+			padding: 0;
+			border: 0;
+		}
+
+		/* Firefox: Add a border around a focused button */
+		&:-moz-focusring {
+			outline: thin dotted;
+		}
+	}
+
+	.size (@padding-v: 8px, @padding-h: 30px, @font-size: 14px) {
+		font-size: @font-size;
+		padding: @padding-v @padding-h;
+	}
+	.size (@padding-v: 8px, @padding-h: 30px, 16px) {
+		button& {
+			*padding: @padding-v - 2 @padding-h - 1 @padding-v - 3;
+		}
+	}
+	.size (@padding-v: 8px, @padding-h: 30px, 14px) {
+		button& {
+			*padding: @padding-v - 1 @padding-h - 1 @padding-v - 3;
+		}
+	}
+	.size (@padding-v: 8px, @padding-h: 30px, 12px) {
+		button& {
+			*padding: @padding-v @padding-h - 1 @padding-v - 3;
+		}
+	}
+
+	.color (@bg-color: #eee, @color: #9b9b9b) {
+		@bd-color: darken(@bg-color, 9%);
+
+		color: @color;
+		/*text-shadow: 0 1px 0 contrast(@color, mix(@bg-color, @color-black, 80%), mix(@bg-color, @color-white, 80%), 0.8);*/
+		border-color: @bd-color;
+		background-color: @bg-color;
+
+		@params: background-color .15s, border-color .15s, color .15s;
+		.transition(@params);
+
+		&:hover, &-hover {
+			border-color: darken(@bd-color, 5%);
+			background-color: darken(@bg-color, 5%);
+			box-shadow: 0 1px 2px darken(@bd-color, 3%) inset;
+		}
+
+		&-disabled, &-disabled:hover {
+			color: #cdcdcd;
+			text-shadow: none;
+			border-color: darken(#ececec, 5%);
+			background-color: #ececec;
+			box-shadow: none;
+		}
+	}
+
+	&-primary, &-primary-s,
+	&-normal, &-normal-s,
+	&-link, &-link-s,
+	&-theme, &-theme-s {
+		.button > .structure;
+	}
+
+	&-primary, &-normal, &-link, &-theme {
+		.button > .size(13px, 56px, 16px);
+	}
+
+	&-primary-s, &-normal-s, &-link-s, &-theme-s {
+		.button > .size(6px, 37px, 16px);
+	}
+
+	&-primary, &-primary-s{
+		.button > .color(#a3d068, #fff);
+	}
+
+	&-normal, &-normal-s{
+		.button > .color(#eee, #9b9b9b);	
+	}
+
+	&-link, &-link-s{
+		.button > .color(#82caf7, #fff);
+	}
+
+	&-theme, &-theme-s{
+		.button > .color(#f8b67a, #fff);
+	}
+}
