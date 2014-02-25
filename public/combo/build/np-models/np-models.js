@@ -1,7 +1,8 @@
 YUI.add('np-models', function (Y, NAME) {
 
 var JSON = Y.config.global.JSON,
-	L = Y.Lang;
+	L = Y.Lang,
+	NPModel = Y.namespace('NPModel');
 
 function Sync () {
 	this.publish('error', {defaultFn: this._defErrorFn});
@@ -96,7 +97,9 @@ Sync.prototype = {
 	parse: function (res) {
 		return res ? res.data : null;
 	}
-};Y.User = Y.Base.create('user', Y.Model, [Sync], {
+};
+
+NPModel.Sync = Sync;Y.User = Y.Base.create('user', Y.Model, [Sync], {
 	apis: {
 		create: '/api/user'
 	},
@@ -108,6 +111,31 @@ Sync.prototype = {
 	ATTRS: {
 		name: {value: null},
 		password: {value: null}
+	}
+});
+
+Y.Audio = Y.Base.create('audio', Y.Model, [Sync], {
+
+}, {
+	ATTRS: {
+		name: {value: null},
+		author: {value: null},
+		duration: {value: null},
+		src: {value: null},
+		lyric: {value: null},
+
+		belong_album: {value: null}
+	}
+});
+
+Y.Album = Y.Base.create('album', Y.Model, [Sync], {
+
+}, {
+	ATTRS: {
+		name: {value: null},
+		avatar: {value: null},
+		audio_num: {value: null},
+		audio_collection: {value: null}
 	}
 });
 

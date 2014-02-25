@@ -6,6 +6,14 @@
 .button-link-s,
 .button-theme,
 .button-theme-s {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   *overflow: visible;
   margin: 0;
   line-height: 1.5;
@@ -13,9 +21,10 @@
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
-  border-radius: 6px;
-  border-width: 1px;
+  border-radius: 2px;
+  border-width: 0;
   border-style: solid;
+  outline: none;
   /* Firefox: Get rid of the inner focus border */
 
   /* Firefox: Add a border around a focused button */
@@ -83,26 +92,26 @@
 .button-link,
 .button-theme {
   font-size: 16px;
-  padding: 13px 56px;
+  padding: 6px 34px;
 }
 button.button-primary,
 button.button-normal,
 button.button-link,
 button.button-theme {
-  *padding: 13px - 2 56px - 1 13px - 3;
+  *padding: 4px 33px 3px;
 }
 .button-primary-s,
 .button-normal-s,
 .button-link-s,
 .button-theme-s {
-  font-size: 16px;
-  padding: 6px 37px;
+  font-size: 12px;
+  padding: 4px 30px;
 }
 button.button-primary-s,
 button.button-normal-s,
 button.button-link-s,
 button.button-theme-s {
-  *padding: 6px - 2 37px - 1 6px - 3;
+  *padding: 4px 29px 1px;
 }
 .button-primary,
 .button-primary-s {
@@ -122,9 +131,13 @@ button.button-theme-s {
 .button-primary-s:hover,
 .button-primary-hover,
 .button-primary-s-hover {
-  border-color: #81b739;
-  background-color: #97ca55;
-  box-shadow: 0 1px 2px #86bf3c inset;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00000000,endColorstr=#1a000000,GradientType=0);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.1)));
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  background-image: -moz-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  background-image: -ms-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
 }
 .button-primary-disabled,
 .button-primary-s-disabled,
@@ -138,11 +151,11 @@ button.button-theme-s {
 }
 .button-normal,
 .button-normal-s {
-  color: #9b9b9b;
+  color: #292929;
   /*text-shadow: 0 1px 0 contrast(@color, mix(@bg-color, @color-black, 80%), mix(@bg-color, @color-white, 80%), 0.8);*/
 
-  border-color: #d7d7d7;
-  background-color: #eeeeee;
+  border-color: #cfcfcf;
+  background-color: #e6e6e6;
   -webkit-backface-visibility: hidden;
   -webkit-transition: background-color 0.15s, border-color 0.15s, color 0.15s;
   -moz-transition: background-color 0.15s, border-color 0.15s, color 0.15s;
@@ -154,9 +167,13 @@ button.button-theme-s {
 .button-normal-s:hover,
 .button-normal-hover,
 .button-normal-s-hover {
-  border-color: #cacaca;
-  background-color: #e1e1e1;
-  box-shadow: 0 1px 2px #cfcfcf inset;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00000000,endColorstr=#1a000000,GradientType=0);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.1)));
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  background-image: -moz-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  background-image: -ms-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
 }
 .button-normal-disabled,
 .button-normal-s-disabled,
@@ -186,9 +203,13 @@ button.button-theme-s {
 .button-link-s:hover,
 .button-link-hover,
 .button-link-s-hover {
-  border-color: #3faef3;
-  background-color: #6ac0f5;
-  box-shadow: 0 1px 2px #48b2f3 inset;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00000000,endColorstr=#1a000000,GradientType=0);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.1)));
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  background-image: -moz-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  background-image: -ms-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
 }
 .button-link-disabled,
 .button-link-s-disabled,
@@ -218,9 +239,13 @@ button.button-theme-s {
 .button-theme-s:hover,
 .button-theme-hover,
 .button-theme-s-hover {
-  border-color: #f49136;
-  background-color: #f7a962;
-  box-shadow: 0 1px 2px #f59640 inset;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00000000,endColorstr=#1a000000,GradientType=0);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.1)));
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  background-image: -moz-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  background-image: -ms-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
 }
 .button-theme-disabled,
 .button-theme-s-disabled,
@@ -289,28 +314,12 @@ button.button-theme-s {
 .clearfix:after {
   clear: both;
 }
-.inline-block,
-.button-primary,
-.button-primary-s,
-.button-normal,
-.button-normal-s,
-.button-link,
-.button-link-s,
-.button-theme,
-.button-theme-s {
+.inline-block {
   display: inline-block;
   *display: inline;
   *zoom: 1;
 }
-.unselectable,
-.button-primary,
-.button-primary-s,
-.button-normal,
-.button-normal-s,
-.button-link,
-.button-link-s,
-.button-theme,
-.button-theme-s {
+.unselectable {
   -webkit-user-drag: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -375,8 +384,6 @@ html {
   /* 1 */
 
   -ms-text-size-adjust: 100%;
-  /* 2 */
-
   -webkit-text-size-adjust: 100%;
   /* 2 */
 

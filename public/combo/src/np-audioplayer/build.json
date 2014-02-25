@@ -2,7 +2,7 @@
 	"name": "np-audioplayer",
 	"builds": {
 		"np-audioplayer": {
-			"jsfiles": ["views.js"]
+			"jsfiles": ["modellists.js", "views.js"]
 		}
 	}
 }

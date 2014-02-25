@@ -20,7 +20,7 @@ Y.LoginView = Y.Base.create('loginView', Y.View, [], {
 		'</div>' +
 		'<div class="login-field">' +
 			'<div class="login-field-element">' +
-				'<button id="user-save" class="button-primary-s">登陆</button>' +
+				'<button id="user-save" class="button-normal">登陆</button>' +
 			'</div>' +
 		'</div>' +
 	'</div>',

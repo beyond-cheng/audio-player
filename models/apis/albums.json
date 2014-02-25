@@ -1,0 +1,35 @@
+{
+	"data": [
+		{
+			"id": 1,
+			"name": "金木水火土",
+			"avatar": "/images/np-albums-1.jpg",
+			"audio_num": 10,
+			"audio_collection": null
+		}, {
+			"id": 2,
+			"name": "钟情张国荣",
+			"avatar": "/images/np-albums-2.jpg",
+			"audio_num": 7,
+			"audio_collection": null
+		}, {
+			"id": 3,
+			"name": "理性与感性",
+			"avatar": "/images/np-albums-3.jpg",
+			"audio_num": 6,
+			"audio_collection": null
+		}, {
+			"id": 4,
+			"name": "学友精选",
+			"avatar": "/images/np-albums-4.jpg",
+			"audio_num": 8,
+			"audio_collection": null
+		}, {
+			"id": 5,
+			"name": "永远的beyond",
+			"avatar": "/images/np-albums-5.jpg",
+			"audio_num": 6,
+			"audio_collection": null
+		}
+	]
+}

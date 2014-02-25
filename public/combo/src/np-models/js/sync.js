@@ -1,5 +1,6 @@
 var JSON = Y.config.global.JSON,
-	L = Y.Lang;
+	L = Y.Lang,
+	NPModel = Y.namespace('NPModel');
 
 function Sync () {
 	this.publish('error', {defaultFn: this._defErrorFn});
@@ -95,3 +96,5 @@ Sync.prototype = {
 		return res ? res.data : null;
 	}
 };
+
+NPModel.Sync = Sync;

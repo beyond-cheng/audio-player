@@ -1,5 +1,5 @@
 {
 	"np-audioplayer": {
-		"requires": ["view"]
+		"requires": ["view", "model-list", "handlebars", "np-models", "node-style"]
 	}
 }

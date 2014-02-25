@@ -15,7 +15,11 @@ YUI.applyConfig({
 			modules: {
     "np-audioplayer": {
         "requires": [
-            "view"
+            "view",
+            "model-list",
+            "handlebars",
+            "np-models",
+            "node-style"
         ]
     },
     "np-login": {

@@ -3,8 +3,8 @@
 	@color-black: #000;
 
 	.structure () {
-		&:extend(.inline-block);
-		&:extend(.unselectable);
+		.inline-block;
+		.unselectable;
 		*overflow: visible;
 		margin: 0;
 		line-height: 1.5;
@@ -13,14 +13,16 @@
 		vertical-align: middle;
 		cursor: pointer;
 	
-		border-radius: 6px;
-		border-width: 1px;
+		border-radius: 2px;
+		border-width: 0;
 		border-style: solid;
+		outline: none;
 
 		&:hover,
 		&-hover {
 			text-decoration: none;
 		}
+
 	
 		&-disabled,
 		&-disabled:hover {
@@ -71,9 +73,7 @@
 		.transition(@params);
 
 		&:hover, &-hover {
-			border-color: darken(@bd-color, 5%);
-			background-color: darken(@bg-color, 5%);
-			box-shadow: 0 1px 2px darken(@bd-color, 3%) inset;
+			.linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.1));
 		}
 
 		&-disabled, &-disabled:hover {
@@ -93,11 +93,11 @@
 	}
 
 	&-primary, &-normal, &-link, &-theme {
-		.button > .size(13px, 56px, 16px);
+		.button > .size(6px, 34px, 16px);
 	}
 
 	&-primary-s, &-normal-s, &-link-s, &-theme-s {
-		.button > .size(6px, 37px, 16px);
+		.button > .size(4px, 30px, 12px);
 	}
 
 	&-primary, &-primary-s{
@@ -105,7 +105,7 @@
 	}
 
 	&-normal, &-normal-s{
-		.button > .color(#eee, #9b9b9b);	
+		.button > .color(#E6E6E6, #292929);	
 	}
 
 	&-link, &-link-s{
