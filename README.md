@@ -1,9 +1,9 @@
-<h2>启动</h2>
+<h2>项目启动</h2>
 <p>项目后台驱动用的是 nodejs + expressjs, 所以本地运行起来很简单</p>
 <pre lang="shell">
 	<code>
-		$ npm i
-		$ node app
+$ npm install
+$ node app
 	</code>
 </pre>
 <h2>前端环境</h2>
