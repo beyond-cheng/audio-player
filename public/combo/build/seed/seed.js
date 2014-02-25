@@ -11613,12 +11613,12 @@ YUI.applyConfig({
 	comboBase: "/combo/yui/3.14.0?",
 	combine: true,
 	root: "",
-	filter: "debug",
+	filter: "min",
 	lang: "zh-Hans-CN",
 	groups: {
 		"newproject": {
 			comboBase: "/combo/0.0.1?",
-			filter: "debug",
+			filter: "min",
 			combine: true,
 			root: "",
 			modules: {

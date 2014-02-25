@@ -1,0 +1,54 @@
+html {
+  overflow-y: scroll;
+}
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  font-size: 1em;
+  font-weight: normal;
+}
+img,
+audio,
+video,
+canvas {
+  vertical-align: middle;
+}
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+textarea {
+  resize: vertical;
+}
+/*
+ * Correct images look awful when resizing in IE 6/7
+ */
+img {
+  -ms-interpolation-mode: bicubic;
+}
+html,
+button,
+input,
+select,
+textarea {
+  color: #2b2b2b;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover {
+  text-decoration: underline;
+}

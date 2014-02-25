@@ -3,8 +3,8 @@ var path = require('path'),
 
 module.exports = Object.freeze({
 	port: env.PORT || 3000,
-	isDevelopment: env.NODE_ENV !== 'production',
-	isProduction : env.NODE_ENV === 'production',
+	isDevelopment: false,
+	isProduction : true,
 
 	version: require('../package.json').version,
 	name: require('../package.json').name,
